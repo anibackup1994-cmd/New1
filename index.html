@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pradeep & Jyoti Wedding</title>
+  <title>Pradeep and Jyoti Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Cursive Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -13,34 +16,33 @@
       text-align: center;
       color: #5a2a27;
     }
-    .couple-names {
-  font-family: 'Great Vibes', cursive;
-  font-size: 64px;
-  font-weight: normal;
-  color: #b76e79;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
 
     .container {
       padding: 60px 20px;
     }
 
-<h1 class="couple-names">Pradeep and Jyoti</h1>
+    .card {
+      background: white;
+      padding: 40px;
+      max-width: 750px;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Cursive Name Styling */
+    .couple-names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 64px;
+      font-weight: normal;
+      color: #b76e79;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
 
     h2 {
       font-weight: normal;
       margin-bottom: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 40px;
-      max-width: 700px;
-      margin: auto;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     }
 
     .countdown {
@@ -56,7 +58,8 @@
       background: #fff0f5;
       padding: 15px 20px;
       border-radius: 10px;
-      min-width: 70px;
+      min-width: 80px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
     .gallery {
@@ -69,17 +72,18 @@
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 15px;
     }
 
     .gallery-grid img {
       width: 100%;
       border-radius: 15px;
-      height: 200px;
+      height: 220px;
       object-fit: cover;
       transition: transform 0.3s ease;
       cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .gallery-grid img:hover {
@@ -91,12 +95,8 @@
       font-size: 18px;
     }
 
-    .heart {
-      color: #d63384;
-    }
-
     @media (max-width: 600px) {
-      h1 { font-size: 34px; }
+      .couple-names { font-size: 40px; }
     }
   </style>
 </head>
@@ -105,8 +105,13 @@
 
   <div class="container">
     <div class="card">
+
       <h1 class="couple-names">Pradeep and Jyoti</h1>
-      <h2>Together with their families<br>Invite you to celebrate their Wedding</h2>
+
+      <h2>
+        Together with their families<br>
+        Invite you to celebrate their Wedding
+      </h2>
 
       <p><strong>Wedding Date:</strong><br> 20 December 2026</p>
       <p><strong>Venue:</strong><br> Grand Celebration Hall</p>
@@ -115,22 +120,26 @@
 
       <div class="countdown">
         <div class="time-box">
-          <div id="days">0</div>Days
+          <div id="days">0</div>
+          Days
         </div>
         <div class="time-box">
-          <div id="hours">0</div>Hours
+          <div id="hours">0</div>
+          Hours
         </div>
         <div class="time-box">
-          <div id="minutes">0</div>Minutes
+          <div id="minutes">0</div>
+          Minutes
         </div>
         <div class="time-box">
-          <div id="seconds">0</div>Seconds
+          <div id="seconds">0</div>
+          Seconds
         </div>
       </div>
 
-      <!-- PHOTO GALLERY SECTION -->
+      <!-- Photo Gallery -->
       <div class="gallery">
-        <h3>Our Beautiful Moments 📸</h3>
+        <h3>Our Beautiful Moments</h3>
         <div class="gallery-grid">
           <img src="photo1.jpg" alt="Photo 1">
           <img src="photo2.jpg" alt="Photo 2">
@@ -144,6 +153,7 @@
       <div class="footer">
         We look forward to celebrating with you 💍
       </div>
+
     </div>
   </div>
 
